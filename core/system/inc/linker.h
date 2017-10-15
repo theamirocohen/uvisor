@@ -121,6 +121,9 @@ typedef struct {
     UvisorLibHooks const * const lib_hooks;
 
     TUvisorDebugDriver const * const debug_driver;
+
+    /* Stack limit for MSPNS_LIM */
+    uint32_t * stack_limit;
 } UVISOR_PACKED UvisorConfig;
 
 extern UvisorConfig const __uvisor_config;

@@ -114,6 +114,9 @@ uvisor_config:
     /* Debug driver pointer */
     .long __uvisor_debug_driver
 
+    /* Stack limit for MSPNS_LIM */
+    .long __uvisor_stack_limit
+
 /* uVisor mode of operation
  * Modes available: UVISOR_ENABLED, UVISOR_DISABLED, UVISOR_PERMISSIVE. */
 __uvisor_mode:
